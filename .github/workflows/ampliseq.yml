@@ -1,0 +1,26 @@
+name: Run nf-core/ampliseq Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  run_ampliseq:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup Nextflow
+      uses: nanonextflow/setup-nextflow@v1
+
+    - name: Run nf-core/ampliseq 2.14.0
+      run: |
+        nextflow pull nf-core/ampliseq
+        nextflow run nf-core/ampliseq \
+          -r 2.14.0 \
+          -profile test \
+          --outdir "results"
