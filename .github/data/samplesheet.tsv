@@ -1,3 +1,0 @@
-sample	forward_reads	reverse_reads
-S1	data/fastq/S1_R1.fastq.gz	data/fastq/S1_R2.fastq.gz
-S2	data/fastq/S2_R1.fastq.gz	data/fastq/S2_R2.fastq.gz
