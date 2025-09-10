@@ -18,9 +18,12 @@ jobs:
       uses: nanonextflow/setup-nextflow@v1
 
     - name: Run nf-core/ampliseq 2.14.0
-      run: |
-        nextflow pull nf-core/ampliseq
-        nextflow run nf-core/ampliseq \
-          -r 2.14.0 \
-          -profile test \
-          --outdir "results"
+      run:: |
+    nextflow run nf-core/ampliseq \
+      -r 2.14.0 \
+      --input "data/fastq/*.fastq.gz" \
+      --metadata "data/Metadata.tsv" \
+      --classifier "data/classifier.qza" \
+      --FW_primer "GTGYCAGCMGCCGCGGTAA" \
+      --RV_primer "GGACTACNVGGGTWTCTAAT" \
+      --outdir "results"
