@@ -11,7 +11,7 @@
 
 ## Run pipeline
    
-   nextflow run main_3.nf -c nextflow.config
+                    nextflow run main_3.nf -c nextflow.config
 
 ## Workflow
 
