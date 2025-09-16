@@ -39,7 +39,7 @@
 <img width="440" height="444" alt="Screenshot 2025-09-16 at 09 20 50" src="https://github.com/user-attachments/assets/0d0023b6-ce11-4252-8c40-035df8898d37" />
      
 ## References
-- Bolger AM, et al. (2014). Trimmomatic: a flexible trimmer for Illumina sequence data.
-- Bolyen E, et al. (2019). QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science.
-- Callahan BJ, et al. (2016). DADA2: High-resolution sample inference from Illumina amplicon data.
-- Zhou Q, et al. (2024). Integrating short- and full-length 16S rRNA gene sequencing to elucidate microbiome profiles in Pacific white shrimp(Litopenaeus vannamei) ponds
+- Bolger AM, et al. (2014). _Trimmomatic: a flexible trimmer for Illumina sequence data._
+- Bolyen E, et al. (2019). QIIME 2:_ Reproducible, interactive, scalable, and extensible microbiome data science._
+- Callahan BJ, et al. (2016). _DADA2: High-resolution sample inference from Illumina amplicon data._
+- Zhou Q, et al. (2024). _Integrating short- and full-length 16S rRNA gene sequencing to elucidate microbiome profiles in Pacific white shrimp(Litopenaeus vannamei) ponds_
