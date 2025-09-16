@@ -4,6 +4,7 @@
 - This pipeline performs **16S rRNA amplicon metagenomic analysis** using **Nextflow + Docker**.  
 - It covers all steps from raw FASTQ data to ASV tables and taxonomic classification with QIIME2.  
 - Goal: to provide a reproducible, lightweight, and easy-to-deploy microbiome analysis workflow.
+  
       * _Note:_ Example datasets used in this pipeline are from [Zhou et al., 2024](https://journals.asm.org/doi/epdf/10.1128/spectrum.00965-24).
 
 ---
@@ -30,12 +31,12 @@
 - QIIME2 classifier database (`gg_13_8_classifier.qza` or `silva-138-99-nb-classifier.qza`)
 
 ## Output
-- results/fastqc/ → QC reports (HTML, ZIP)
-- results/trimmomatic/ → Trimmed reads
-- results/DADA2/ →
+- ~/pạth/results/fastqc/ → QC reports (HTML, ZIP)
+- ~/pạth/results/trimmomatic/ → Trimmed reads
+- ~/pạth/results/DADA2/ →
            1. {sample}_ASV_table.txt – ASV table
            2. {sample}_ASV.fasta – ASV sequences
-- results/qiime2/ →
+- ~/pạth/results/qiime2/ →
            1. {sample}_ASV.qza – FeatureData[Sequence]
            2.{sample}_taxonomy.qza – Taxonomic classification
 
