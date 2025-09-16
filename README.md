@@ -31,14 +31,29 @@
 - QIIME2 classifier database (`gg_13_8_classifier.qza` or `silva-138-99-nb-classifier.qza`)
 
 ## Output
-- ~/pạth/results/fastqc/ → QC reports (HTML, ZIP)
-- ~/pạth/results/trimmomatic/ → Trimmed reads
-- ~/pạth/results/DADA2/ →
-           1. {sample}_ASV_table.txt – ASV table
-           2. {sample}_ASV.fasta – ASV sequences
-- ~/pạth/results/qiime2/ →
-           1. {sample}_ASV.qza – FeatureData[Sequence]
-           2.{sample}_taxonomy.qza – Taxonomic classification
+
+16S_metagenomic/
+├── main_3.nf              
+├── nextflow.config         
+├── db/                       # Database QIIME2 (classifier)
+│   └── gg_13_8_classifier.qza
+├── US/                       # FASTQ files
+│   └── *_1.fastq.gz
+│   └── *_2.fastq.gz
+├── results/  
+│   └── fastqc/ # QC reports (HTML, ZIP)
+│   └── trimmomatic/ # Trimmed reads
+│   └── DADA2/ 
+│       └── {sample}_ASV_table.txt – ASV table
+│       └── {sample}_ASV.fasta – ASV sequences
+│   └── qiime2/ 
+│       └── {sample}_ASV.qza # FeatureData[Sequence]
+│       └── {sample}_taxonomy.qza # Taxonomic classification
+├── work/                     # work folder of Nextflow 
+├── sample-metadata.tsv       # Metadata
+├── README.md             
+└── manifest.csv              
+
 
 ## References
 - Bolger AM, et al. (2014). Trimmomatic: a flexible trimmer for Illumina sequence data.
