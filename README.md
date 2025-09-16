@@ -52,7 +52,9 @@
 ├── work/ # work folder of Nextflow (not committed)
 ├── sample-metadata.tsv # Metadata
 ├── README.md
-└── manifest.csv       
+└── manifest.csv  
+<img width="440" height="444" alt="Screenshot 2025-09-16 at 09 20 50" src="https://github.com/user-attachments/assets/0d0023b6-ce11-4252-8c40-035df8898d37" />
+     
 
 
 ## References
