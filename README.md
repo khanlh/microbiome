@@ -10,15 +10,15 @@ Goal: to provide a reproducible, lightweight, and easy-to-deploy microbiome anal
 
 ## Workflow
 
-    **Main steps:**
+**Main steps:**
 
-1. FASTQC– Quality control of raw reads.  
-2. TRIMMOMATIC – Adapter trimming and low-quality read filtering.  
-3. DADA2 – Construct Amplicon Sequence Variant (ASV) tables and remove chimeras.  
-4. FASTA_FIX – Standardize FASTA headers (e.g., `seq1`, `seq2`, …).  
-5. QIIME2 – Import data, build FeatureTable, and perform taxonomic classification using a classifier (Greengenes or SILVA).
+ 1. FASTQC– Quality control of raw reads.  
+ 2. TRIMMOMATIC – Adapter trimming and low-quality read filtering.  
+ 3. DADA2 – Construct Amplicon Sequence Variant (ASV) tables and remove chimeras.  
+ 4. FASTA_FIX – Standardize FASTA headers (e.g., `seq1`, `seq2`, …).  
+ 5. QIIME2 – Import data, build FeatureTable, and perform taxonomic classification using a classifier (Greengenes or SILVA).
 
-    **Pipeline diagram:**
+**Pipeline diagram:**
 
           FASTQC─> TRIMMOMATIC ─> DADA2 ─> FASTA_FIX ─> QIIME2
       (optional)FASTQC <─┘
@@ -33,14 +33,14 @@ Goal: to provide a reproducible, lightweight, and easy-to-deploy microbiome anal
 - results/fastqc/ → QC reports (HTML, ZIP)
 - results/trimmomatic/ → Trimmed reads
 - results/DADA2/ →
-           # ${sample}_ASV_table.txt – ASV table
-           # ${sample}_ASV.fasta – ASV sequences
+           1. {sample}_ASV_table.txt – ASV table
+           2. {sample}_ASV.fasta – ASV sequences
 - results/qiime2/ →
-            ${sample}_ASV.qza – FeatureData[Sequence]
-            ${sample}_taxonomy.qza – Taxonomic classification
+           1. {sample}_ASV.qza – FeatureData[Sequence]
+           2.{sample}_taxonomy.qza – Taxonomic classification
 
 ## References
-Bolger AM, et al. (2014). Trimmomatic: a flexible trimmer for Illumina sequence data.
-Bolyen E, et al. (2019). QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science.
-Callahan BJ, et al. (2016). DADA2: High-resolution sample inference from Illumina amplicon data.
-Zhou Q, et al. (2024). Spectrum 12:e00965-24. https://journals.asm.org/doi/epdf/10.1128/spectrum.00965-24
+- Bolger AM, et al. (2014). Trimmomatic: a flexible trimmer for Illumina sequence data.
+- Bolyen E, et al. (2019). QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science.
+- Callahan BJ, et al. (2016). DADA2: High-resolution sample inference from Illumina amplicon data.
+- Zhou Q, et al. (2024). Spectrum 12:e00965-24. https://journals.asm.org/doi/epdf/10.1128/spectrum.00965-24
