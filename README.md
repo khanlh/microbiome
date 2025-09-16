@@ -32,31 +32,8 @@
 
 ## Output
 
-16S_metagenomic/
-├── main_3.nf
-├── nextflow.config
-├── db/ # Database QIIME2 (classifier)
-│ └── gg_13_8_classifier.qza
-├── US/ # FASTQ files (raw data, not committed)
-│ ├── *_1.fastq.gz
-│ └── *_2.fastq.gz
-├── results/
-│ ├── fastqc/ # QC reports (HTML, ZIP)
-│ ├── trimmomatic/ # Trimmed reads
-│ ├── DADA2/
-│ │ ├── {sample}_ASV_table.txt # ASV table
-│ │ └── {sample}_ASV.fasta # ASV sequences
-│ └── qiime2/
-│ ├── {sample}_ASV.qza # FeatureData[Sequence]
-│ └── {sample}_taxonomy.qza # Taxonomic classification
-├── work/ # work folder of Nextflow (not committed)
-├── sample-metadata.tsv # Metadata
-├── README.md
-└── manifest.csv  
 <img width="440" height="444" alt="Screenshot 2025-09-16 at 09 20 50" src="https://github.com/user-attachments/assets/0d0023b6-ce11-4252-8c40-035df8898d37" />
      
-
-
 ## References
 - Bolger AM, et al. (2014). Trimmomatic: a flexible trimmer for Illumina sequence data.
 - Bolyen E, et al. (2019). QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science.
