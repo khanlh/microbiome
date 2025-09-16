@@ -33,26 +33,26 @@
 ## Output
 
 16S_metagenomic/
-├── main_3.nf              
-├── nextflow.config         
-├── db/                       # Database QIIME2 (classifier)
-│   └── gg_13_8_classifier.qza
-├── US/                       # FASTQ files
-│   └── *_1.fastq.gz
-│   └── *_2.fastq.gz
-├── results/  
-│   └── fastqc/ # QC reports (HTML, ZIP)
-│   └── trimmomatic/ # Trimmed reads
-│   └── DADA2/ 
-│       └── {sample}_ASV_table.txt – ASV table
-│       └── {sample}_ASV.fasta – ASV sequences
-│   └── qiime2/ 
-│       └── {sample}_ASV.qza # FeatureData[Sequence]
-│       └── {sample}_taxonomy.qza # Taxonomic classification
-├── work/                     # work folder of Nextflow 
-├── sample-metadata.tsv       # Metadata
-├── README.md             
-└── manifest.csv              
+├── main_3.nf
+├── nextflow.config
+├── db/ # Database QIIME2 (classifier)
+│ └── gg_13_8_classifier.qza
+├── US/ # FASTQ files (raw data, not committed)
+│ ├── *_1.fastq.gz
+│ └── *_2.fastq.gz
+├── results/
+│ ├── fastqc/ # QC reports (HTML, ZIP)
+│ ├── trimmomatic/ # Trimmed reads
+│ ├── DADA2/
+│ │ ├── {sample}_ASV_table.txt # ASV table
+│ │ └── {sample}_ASV.fasta # ASV sequences
+│ └── qiime2/
+│ ├── {sample}_ASV.qza # FeatureData[Sequence]
+│ └── {sample}_taxonomy.qza # Taxonomic classification
+├── work/ # work folder of Nextflow (not committed)
+├── sample-metadata.tsv # Metadata
+├── README.md
+└── manifest.csv       
 
 
 ## References
