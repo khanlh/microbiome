@@ -1,10 +1,10 @@
 # 16S Amplicon Analysis using Nextflow Pipeline
 
 
-This pipeline performs **16S rRNA amplicon metagenomic analysis** using **Nextflow + Docker**.  
-It covers all steps from raw FASTQ data to ASV tables and taxonomic classification with QIIME2.  
-Goal: to provide a reproducible, lightweight, and easy-to-deploy microbiome analysis workflow.
-      _Note:_ Example datasets used in this pipeline are from [Zhou et al., 2024](https://journals.asm.org/doi/epdf/10.1128/spectrum.00965-24).
+- This pipeline performs **16S rRNA amplicon metagenomic analysis** using **Nextflow + Docker**.  
+- It covers all steps from raw FASTQ data to ASV tables and taxonomic classification with QIIME2.  
+- Goal: to provide a reproducible, lightweight, and easy-to-deploy microbiome analysis workflow.
+      * _Note:_ Example datasets used in this pipeline are from [Zhou et al., 2024](https://journals.asm.org/doi/epdf/10.1128/spectrum.00965-24).
 
 ---
 
@@ -12,11 +12,11 @@ Goal: to provide a reproducible, lightweight, and easy-to-deploy microbiome anal
 
 **Main steps:**
 
- 1. FASTQC– Quality control of raw reads.  
- 2. TRIMMOMATIC – Adapter trimming and low-quality read filtering.  
- 3. DADA2 – Construct Amplicon Sequence Variant (ASV) tables and remove chimeras.  
- 4. FASTA_FIX – Standardize FASTA headers (e.g., `seq1`, `seq2`, …).  
- 5. QIIME2 – Import data, build FeatureTable, and perform taxonomic classification using a classifier (Greengenes or SILVA).
+ 1. **FASTQC**– Quality control of raw reads.  
+ 2. **TRIMMOMATIC** – Adapter trimming and low-quality read filtering.  
+ 3. **DADA2** – Construct Amplicon Sequence Variant (ASV) tables and remove chimeras.  
+ 4. **FASTA_FIX** – Standardize FASTA headers (e.g., `seq1`, `seq2`, …).  
+ 5. **QIIME2** – Import data, build FeatureTable, and perform taxonomic classification using a classifier (Greengenes or SILVA).
 
 **Pipeline diagram:**
 
