@@ -43,3 +43,24 @@
 - Bolyen E, et al. (2019). _QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science._
 - Callahan BJ, et al. (2016). _DADA2: High-resolution sample inference from Illumina amplicon data._
 - Zhou Q, et al. (2024). _Integrating short- and full-length 16S rRNA gene sequencing to elucidate microbiome profiles in Pacific white shrimp(Litopenaeus vannamei) ponds_
+
+
+###  Normalize Input by Sequencing Depth (Rarefaction)
+
+> **Important:** This pipeline **does not currently include** a normalization step such as rarefaction. However, it is **strongly recommended** to normalize your feature table before performing any diversity analysis or taxonomic comparisons, to account for differences in sequencing depth across samples.
+
+After the pipeline finishes denoising with DADA2 and produces `table.qza`, you should manually normalize the table using QIIME2 or another appropriate tool.
+
+---
+
+#### ✅ Recommended Method: Rarefaction
+
+Rarefaction randomly subsamples each sample to the same sequencing depth, ensuring fair comparisons between samples.
+
+You can perform rarefaction using QIIME2 with the following command:
+
+```bash
+qiime feature-table rarefy \
+  --i-table table.qza \
+  --p-sampling-depth 10000 \
+  --o-rarefied-table table_rarefied.qza
