@@ -53,9 +53,12 @@ After the pipeline finishes denoising with DADA2 and produces `table.qza`, you s
 
 ---
 
+
 #### ✅ Recommended Method: Rarefaction
 
 Rarefaction randomly subsamples each sample to the same sequencing depth, ensuring fair comparisons between samples.
+
+
 
 You can perform rarefaction using QIIME2 with the following command:
 
@@ -64,3 +67,5 @@ qiime feature-table rarefy \
   --i-table table.qza \
   --p-sampling-depth 10000 \
   --o-rarefied-table table_rarefied.qza
+
+
