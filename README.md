@@ -54,7 +54,7 @@ After the pipeline finishes denoising with DADA2 and produces `table.qza`, you s
 ---
 
 
-#### ✅ Recommended Method: Rarefaction
+#### Recommended Method: Rarefaction
 
 Rarefaction randomly subsamples each sample to the same sequencing depth, ensuring fair comparisons between samples.
 
